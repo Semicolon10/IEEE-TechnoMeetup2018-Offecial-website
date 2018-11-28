@@ -1,0 +1,35 @@
+.press-elements-image-accordion {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.press-elements-image-accordion ul {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+.press-elements-image-accordion ul li {
+	display: table-cell;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.press-elements-image-accordion ul li div {
+	display: none;
+	overflow: hidden;
+	opacity: 0;
+	transition-delay: 1s;
+}
+.press-elements-image-accordion ul li div * {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.press-elements-image-accordion ul:hover li:hover div {
+	display: inline-block;
+	opacity: 1;
+	transition: opacity 500ms;
+}
